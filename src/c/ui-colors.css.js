@@ -1,3 +1,5 @@
+import { totalmem } from "os";
+
 const gray ='#2c3531';
 const teal ='#116466'; 
 const brown ='#d9b08c';

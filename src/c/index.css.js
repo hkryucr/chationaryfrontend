@@ -1,4 +1,4 @@
-import colors from "c/core/ui-colors.css.js";
+import colors from "c/ui-colors.css.js";
 
 export default {
   fontFamily: "Rubik, sans-serif",
