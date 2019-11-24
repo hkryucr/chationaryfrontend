@@ -23,9 +23,9 @@ class ChatNavigation extends React.Component{
                             <Dropdown.Item>Billy</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <FontAwesomeIcon className="chat-nav-icon" icon={faHome} color="white" style={{marginRight: "6px"}}/>
-                    <FontAwesomeIcon className="chat-nav-icon" icon={faUser} color="white" style={{marginRight: "6px"}}/>
-                    <FontAwesomeIcon className="chat-nav-icon" icon={faSearch} color="white" style={{marginRight: "6px"}}/>
+                    <FontAwesomeIcon className="chat-nav-icon" icon={faHome} color="white"/>
+                    <FontAwesomeIcon className="chat-nav-icon" icon={faUser} color="white"/>
+                    <FontAwesomeIcon className="chat-nav-icon" icon={faSearch} color="white"/>
                     <FontAwesomeIcon className="chat-nav-icon" icon={faSignOutAlt} color="white"/>
                 </Nav>
             </Navbar>

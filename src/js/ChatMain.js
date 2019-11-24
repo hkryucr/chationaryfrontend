@@ -2,7 +2,8 @@ import ChatDictionary from 'j/ChatDictionary.js'
 import ChatUsers from 'j/ChatUsers.js'
 import ChatMessenger from 'j/ChatMessenger.js'
 import React from 'react';
-import { Row, Container, Col } from 'react-bootstrap' 
+import { Container } from 'react-bootstrap' 
+import 'c/index.css';
 
 class ChatMain extends React.Component{
     render (){

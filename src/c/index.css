@@ -1,15 +1,13 @@
-/* html, body, #main {
-    height: 100vh
-} */
-
-.chat-main-container {
+html, body, #main {
     height: 100vh;
-    overflow-y: hidden;
-    margin-bottom: -56px;
+    width: 100vw;
 }
 
 .chat-nav {
     align-items: center !important;
+}
+.chat-nav-icon{
+    margin-right: 8px;
 }
 
 .dropdown-menu{
@@ -23,4 +21,99 @@
 
 .chat-nav-dropdown-item-title {
     font-weight: bold!important
+}
+
+.chat-main-container {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 58px);
+    min-width: 100vw;
+    overflow-y: hidden;
+}
+
+@media (max-width: 767px) {
+    .chat-users {
+        display: none;
+    }
+    .chat-messenger{
+        width: 100vw !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .chat-dictionary{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .chat-users {
+        width: 15vw;
+        border-right: 1px solid #e1e1e1aa
+    }
+    .chat-messenger{
+        width: 45vw;
+        border-right: 1px solid #e1e1e1aa
+    }
+    .chat-dictionary{
+        width: 40vw;
+    }
+}
+@media (min-width: 1025px) {
+    .chat-users {
+        width: 10vw;
+        border-right: 1px solid #e1e1e1aa
+    }
+    .chat-messenger{
+        width: 50vw;
+        border-right: 1px solid #e1e1e1aa
+    }
+    .chat-dictionary{
+        width: 40vw;
+    }
+}
+
+.chat-users-title {
+    font-weight: bold; 
+    font-size: 1.2 em; 
+    margin-bottom: 5px;
+}
+
+.chat-messenger {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messenger-compose-form-control {
+    min-width: 100px;
+}
+
+.message {
+    position: relative;
+    max-width: 40vh;
+    overflow: hidden;
+    clear: both;
+}
+.message .name{
+    font-size: 0.8rem;
+}
+
+.message .text{
+    font-size: 1rem;
+    padding: 12px;
+    line-height: 26px;
+    position: relative;
+}
+
+.message .left {
+    text-align: left;
+    float: left;
+}
+.message .left .content {
+    background: #ebebeb;
+    color: #333333;
+    border-radius: 8px 8px 8px 0;
+}
+
+.message .right {
+    text-align: right;
+    float: right
 }
