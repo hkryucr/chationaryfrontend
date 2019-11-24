@@ -7,7 +7,7 @@ import 'c/index.css';
 class ChatMessenger extends React.Component{
     render(){
         return (
-            <Container className="chat-messenger">
+            <Container className="chat-messenger" fluid={true}>
                 <Messages/>
                 <Compose/>
             </Container>

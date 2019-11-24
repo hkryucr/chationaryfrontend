@@ -6,14 +6,10 @@ import 'c/index.css';
 class Compose extends React.Component{
     render(){
         return(
-            <Form style={{marginTop:"auto", marginBottom: 6}}>
-                <Form.Row>
-                    <Col>
-                        <Form.Control className="chat-messenger-compose-form-control" type="text" size="md" placeholder="message"></Form.Control>                            
-                    </Col>
-                    <Col>
-                        <Button variant="info" size="md" type="submit" value="Submit">Send</Button>
-                    </Col>
+            <Form className="compose-form">
+                <Form.Row className="compose-form-row">
+                    <Form.Control className="compose-form-control" as="textarea" size="md" placeholder="message" rows="1"></Form.Control>
+                    <Button variant="info" size="md" type="submit" value="Submit">Send</Button>
                 </Form.Row>
             </Form>
         )
