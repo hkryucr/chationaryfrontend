@@ -1,0 +1,26 @@
+/* html, body, #main {
+    height: 100vh
+} */
+
+.chat-main-container {
+    height: 100vh;
+    overflow-y: hidden;
+    margin-bottom: -56px;
+}
+
+.chat-nav {
+    align-items: center !important;
+}
+
+.dropdown-menu{
+    width: 70px
+}
+
+.chat-nav-dropdown-menu .dropdown-item {
+    padding: 0.2rem 0.8rem !important;
+    font-size: 0.9rem !important;
+}
+
+.chat-nav-dropdown-item-title {
+    font-weight: bold!important
+}

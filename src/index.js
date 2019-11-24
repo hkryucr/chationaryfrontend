@@ -1,12 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
-import style from "c/index.css.js"
-import Chat from "j/Chat.js"
+import ChatNavigation from 'j/ChatNavigation';
+import ChatMain from 'j/ChatMain'
 
 class App extends React.Component {
   render() {
     return (
-        <Chat/>
+      <React.Fragment>
+        <ChatNavigation/>
+        <ChatMain/>
+      </React.Fragment>
     )
   }
 }
