@@ -80,15 +80,12 @@ html, body, #main {
     flex-direction: column;
 }
 
-.chat-messenger-compose-form-control {
-    min-width: 100px;
-}
-
 .messages-container{
     position: relative;
     overflow: scroll;
     margin-top: 10px;
-    clear: both;
+    display: flex;
+    flex-direction: column;
 }
 
 .message-name{
@@ -104,6 +101,7 @@ html, body, #main {
     line-height: 1.4rem;
     position: relative;
 }
+
 .message-meta {
     font-size: 0.6rem;
     line-height: 1.4rem;
@@ -111,9 +109,12 @@ html, body, #main {
 }
 
 .message-left {
+    display: block;
     text-align: left;
-    float: left;
+    align-self: flex-start;
+    max-width: 42rem;
 }
+
 .message-left .message-content {
     background: #ebebeb !important;
     color: #333333;
@@ -122,8 +123,10 @@ html, body, #main {
 }
 
 .message-right {
+    display: block;
     text-align: right;
-    float: right
+    align-self: flex-end;
+    max-width: 42rem;
 }
 
 .message-right .message-content {
