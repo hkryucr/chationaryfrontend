@@ -1,8 +1,19 @@
 html, body, #main {
     height: 100vh;
     width: 100vw;
+    position: absolute;
+}
+body{
+    margin: 0;
 }
 
+.stretchy {
+	flex: 1 1 auto;
+}
+
+/**
+Chat Navigation
+**/
 .chat-nav {
     align-items: center !important;
 }
@@ -23,10 +34,14 @@ html, body, #main {
     font-weight: bold!important
 }
 
+/**
+Chat Main Container
+**/
+
 .chat-main-container {
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh - 58px);
+    height: calc(100vh - 58px);
     min-width: 100vw;
     overflow-y: hidden;
 }
@@ -43,6 +58,9 @@ html, body, #main {
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .dropdown{
+        display: none
+    }
     .chat-users {
         width: 15vw;
         border-right: 1px solid #e1e1e1aa
@@ -56,6 +74,9 @@ html, body, #main {
     }
 }
 @media (min-width: 1025px) {
+    .dropdown{
+        display: none
+    }
     .chat-users {
         width: 10vw;
         border-right: 1px solid #e1e1e1aa
@@ -68,12 +89,18 @@ html, body, #main {
         width: 40vw;
     }
 }
-
+/**
+Chat Users
+**/
 .chat-users-title {
     font-weight: bold; 
     font-size: 1.2 em; 
     margin-bottom: 5px;
 }
+
+/**
+Chat Messenger
+**/
 
 .chat-messenger {
     display: flex;
@@ -81,8 +108,9 @@ html, body, #main {
 }
 
 .messages-container{
+    flex-grow: 1;
     position: relative;
-    overflow: scroll;
+    overflow: auto;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -149,4 +177,86 @@ html, body, #main {
 .compose-form-row button {
     margin-left: 0.5rem;
     margin-top: auto;
+}
+
+/**
+Chat Dictionary
+**/
+.chat-dictionary{
+    display: flex;
+    flex-direction: column; 
+}
+
+.chat-dictionary-meaning-container{
+    padding: 0px 0px 0px 0px!important;
+    margin-top: 10px;
+    flex-grow: 1;
+    max-height: 40vh;
+    margin-bottom: 5px;
+}
+
+.chat-dictionary-meaning-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.chat-dictionary-meaning-title-word {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.1rem 0.4rem 0.1rem 0rem 
+}
+
+.chat-dictionary-meaning-title-phonetic-spelling {
+    font-size: 1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem 
+}
+.chat-dictionary-meaning-title-icon{
+    padding: 0.2rem 0rem 0.2rem 0.4rem; 
+}
+
+.chat-dictionary-meaning-title-separator{
+    margin: 0.5rem 0px 0.5rem 0px;
+    border-bottom: solid 1px #e1e1e1aa
+}
+
+.chat-dictionary-meaning-definition-type{
+    font-style: italic
+}
+
+.chat-dictionary-meaning-definition-content-meaning{
+    margin-left: 0.5rem
+}
+
+.chat-dictionary-image{
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+    overflow: auto;
+}
+.chat-dictionary-image-title{
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.chat-dictionary-image-block-row{
+    position: relative;
+    overflow-y: scroll;
+    display: flex;
+    flex-grow: 1
+}
+.chat-dictionary-image-block {
+    border: 3px solid white ;
+    background-color: black;
+    padding: 0px;    
+    margin: 0px;
+    height: 17vh;
+    text-align: center;
+    vertical-align: bottom;
+}
+.chat-dictionary-image-separator{
+    margin: 0.5rem 0px 1rem 0px;
+    border-bottom: solid 1px #e1e1e1aa;
 }
