@@ -70,6 +70,8 @@ Chat Main Container
         border-right: 1px solid #e1e1e1aa
     }
     .chat-dictionary{
+        display: flex;
+        flex-direction: column; 
         width: 40vw;
     }
 }
@@ -86,6 +88,8 @@ Chat Main Container
         border-right: 1px solid #e1e1e1aa
     }
     .chat-dictionary{
+        display: flex;
+        flex-direction: column; 
         width: 40vw;
     }
 }
@@ -94,14 +98,13 @@ Chat Users
 **/
 .chat-users-title {
     font-weight: bold; 
-    font-size: 1.2 em; 
+    font-size: 1.2rem; 
     margin-bottom: 5px;
 }
 
 /**
 Chat Messenger
 **/
-
 .chat-messenger {
     display: flex;
     flex-direction: column;
@@ -182,17 +185,14 @@ Chat Messenger
 /**
 Chat Dictionary
 **/
-.chat-dictionary{
-    display: flex;
-    flex-direction: column; 
-}
 
-.chat-dictionary-meaning-container{
+.chat-dictionary-meaning{
     padding: 0px 0px 0px 0px!important;
     margin-top: 10px;
     flex-grow: 1;
-    max-height: 40vh;
     margin-bottom: 5px;
+    overflow: auto;
+    min-height: 40vh;
 }
 
 .chat-dictionary-meaning-title{
@@ -232,8 +232,8 @@ Chat Dictionary
 .chat-dictionary-image{
     display: flex;
     flex-direction: column;
-    max-height: auto;
     overflow: auto;
+    flex-grow: 1;
 }
 .chat-dictionary-image-title{
     font-style: italic;
@@ -242,10 +242,8 @@ Chat Dictionary
 }
 
 .chat-dictionary-image-block-row{
-    position: relative;
     overflow-y: scroll;
     display: flex;
-    flex-grow: 1
 }
 .chat-dictionary-image-block {
     border: 3px solid white ;

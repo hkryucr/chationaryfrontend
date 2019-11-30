@@ -7,7 +7,7 @@ import { faHome, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 class ChatDictionaryMeaning extends React.Component{
     render(){
         return (
-            <Container className="chat-dictionary-meaning-container">
+            <Container className="chat-dictionary-meaning">
                 <div className="chat-dictionary-meaning-title">
                     <div className="chat-dictionary-meaning-title-word">assuage</div>
                     <div className="chat-dictionary-meaning-title-phonetic-spelling">[ uh-sweyj, uh-sweyzh ]</div>
@@ -68,6 +68,26 @@ class ChatDictionaryMeaning extends React.Component{
                         <span className="chat-dictionary-meaning-definition-content-meaning">
                             to soothe, moderate, or relieve (grief, pain, etc)
                         </span>
+                    </div>
+                    <div value={2} className="chat-dictionary-meaning-definition-content">
+                        <span className="chat-dictionary-meaning-definition-content-num">2.</span>
+                        <span className="chat-dictionary-meaning-definition-content-meaning">
+                            to give relief to (thirst, appetite, etc); satisfy
+                        </span>    
+                    </div>
+                    <div value={3} className="chat-dictionary-meaning-definition-content">
+                        <span className="chat-dictionary-meaning-definition-content-num">3.</span>
+                        <span className="chat-dictionary-meaning-definition-content-meaning">to pacify; calm</span> 
+                    </div>
+                    <div value={2} className="chat-dictionary-meaning-definition-content">
+                        <span className="chat-dictionary-meaning-definition-content-num">2.</span>
+                        <span className="chat-dictionary-meaning-definition-content-meaning">
+                            to give relief to (thirst, appetite, etc); satisfy
+                        </span>    
+                    </div>
+                    <div value={3} className="chat-dictionary-meaning-definition-content">
+                        <span className="chat-dictionary-meaning-definition-content-num">3.</span>
+                        <span className="chat-dictionary-meaning-definition-content-meaning">to pacify; calm</span> 
                     </div>
                     <div value={2} className="chat-dictionary-meaning-definition-content">
                         <span className="chat-dictionary-meaning-definition-content-num">2.</span>
