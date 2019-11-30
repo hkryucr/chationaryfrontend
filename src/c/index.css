@@ -239,6 +239,7 @@ Chat Dictionary
     font-style: italic;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .chat-dictionary-image-block-row{
@@ -255,6 +256,6 @@ Chat Dictionary
     vertical-align: bottom;
 }
 .chat-dictionary-image-separator{
-    margin: 0.5rem 0px 1rem 0px;
+    margin: 0.5rem 0rem 1rem 0rem;
     border-bottom: solid 1px #e1e1e1aa;
 }

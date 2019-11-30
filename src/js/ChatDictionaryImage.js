@@ -21,8 +21,7 @@ class ChatDictionaryImage extends React.Component{
                         <Image className="chat-dictionary-image-block" src="http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city6.jpg" rounded fluid />
                         <Image className="chat-dictionary-image-block" src="http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city7.jpg" rounded fluid />
                     </Row>
-                    <div className="chat-dictionary-image-separator">
-                    </div>
+                    <div className="chat-dictionary-image-separator"></div>
                 </Container>
             </>
         )
